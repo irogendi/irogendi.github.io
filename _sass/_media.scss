@@ -1,0 +1,90 @@
+// @media screen and (max-height: 625px) {
+//     .sidebar {padding-top: 15px;}
+//     #section1_link, #section2_link, #section3_link, #section4_link {font-size: x-large;}
+//     #summary_p {display: none;}
+//     #current {font-size: x-large;}    
+// }
+// @media screen and (max-width: 700px) {
+//     .flex-landing-links  {flex-direction: column;}
+//     #landing_body {padding-bottom: 10px;}
+
+
+// }
+// @media screen and (min-width: 1200px) {
+//     #summary_p {
+//         height: fit-content;
+//         visibility: visible;
+//         opacity: 1;
+//         transition: height 0.1s, visibility 0.1s, opacity 0.1s linear;
+//     }
+// }
+
+// @media screen and (max-width: 1135px) {
+//     #summary_p {
+//         height: 0px;
+//         visibility: hidden;
+//         opacity: 0;
+//         transition: height 0.1s, visibility 0.1s, opacity 0.1s linear;
+//     }
+// }
+
+// @media screen and (max-width: 1000px) {
+//     .flex-container {
+//         margin: auto;
+//         padding: auto;
+//     }
+//     .flex-nav a, .flex-nav p{
+//         padding: 5px;
+//         font-size: 13px;
+//     }
+//     .flex-nav h1{
+//         padding: 5px;
+//         font-size: 20px;
+//     }
+//     #navi-current {
+//         font-size: 15px;
+//     }
+//     .flex-nav a:hover {
+//         font-size: 90%;
+//         transition: 0.1s;
+//     }
+//     .flex-nav h1:hover {
+//         font-size: 170%;
+//         transition: 0.5s;
+//     }
+// }
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

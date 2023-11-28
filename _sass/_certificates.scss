@@ -1,0 +1,23 @@
+.main-certificates-container {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: column;
+    background: var(--black);
+    color: var(--color-text-alt);
+    transition: 0.5s;
+    p, h1, h2, h3 {
+        line-height: 30px;
+    }
+}
+
+.main-certificates-content {
+    background: var(--color-sidebar-background);
+    width: auto;
+    height: 630px;
+    border-radius: 15px;
+    // padding: 20px;
+    text-align: justify;
+    transition: 0.3s;
+    overflow-y: auto;
+}

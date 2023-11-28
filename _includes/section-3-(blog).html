@@ -1,0 +1,35 @@
+<section id="blog-id" class="slides blog">
+    <div class="blog-section ">
+        <div class="scroll-up">
+            <a id="blog_caret_up" class="caret-up"  href="#projects-id">{% include svg/up.svg %}</a>
+        </div>
+        <div class="blog-header">
+            <h2>{{ site.section_two }}</h2>
+            <h4 >Recent posts</h4>
+        </div>
+        <div class="blog-content ">
+            
+            <ul>
+                    {% for post in site.posts %}
+                        {% if post.type == "blog" %}
+                            <li>
+                                <a href="{{ post.url }}">
+                                    {{ post.title | upcase }}
+                                </a>
+                                <h6>{{ post.date | date_to_string }}</h6>
+                                {{ post.excerpt}}
+                            </li>
+                        {% endif %}
+                {% endfor %}
+            </ul>
+           
+        </div>
+        <div class="blog-mainlink">
+            <a href="/blog">See All</a>
+        </div>   
+        <div class="scroll-down">
+            <a id="blog_caret_down" class="caret-down" href="#certificates-id">{% include svg/down.svg %}</a>
+        </div>
+        
+    </div>
+</section>

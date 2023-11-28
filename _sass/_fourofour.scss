@@ -1,0 +1,21 @@
+.fof-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background: var(--black);
+    color: var(--violet-2);
+    height: 100vh;
+    width: 100vw;
+
+    .fourofour {
+        background: var(--color-text-box);
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center; 
+        align-self: center;
+        p, h1 {
+            line-height: 30px;
+        }
+    }
+
+}

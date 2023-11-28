@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<body>
+    <div>
+        <button id="obtn" class="openbtn" onclick="openNav()">&gt;</button>  
+    </div>
+    <div class="fof-container">
+        <div id="bodySidebar" class="sidebar">
+            {% include navigation.html %}
+        </div>
+        <div class="fourofour">
+            {{ content }}
+        </div>
+
+    </div>
+</body>
+
