@@ -1,19 +1,22 @@
 ---
 layout: default
 ---
-
-<body>
-    <div>
-        <button id="obtn" class="openbtn" onclick="openNav()">&gt;</button>  
-    </div>
-    <div class="fof-container">
+<div class="fof-main-container">
+    <header class="fof-header">
         <div id="bodySidebar" class="sidebar">
             {% include navigation.html %}
         </div>
-        <div class="fourofour">
-            {{ content }}
-        </div>
+    </header>
 
+    <div>
+        <button id="obtn" class="openbtn" onclick="openNav()">&gt;</button>  
     </div>
-</body>
+    
+
+    <div class="fof">
+        <h1>404</h1>
+        <p>Page not found! :(</p>
+    </div>
+    
+</div>
 

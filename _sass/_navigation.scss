@@ -54,8 +54,7 @@
     .nav {
         margin: 7.5px 10px;
         transition: 0.5s;
-        // text-align: left;
-        text-align: center;
+        text-align: left;
         a {
             color: #818181;
             padding: 8px 8px 8px 32px;
@@ -69,6 +68,7 @@
         p {
             color: #818181;
             padding: 8px 35px 8px 32px;
+            text-align: left;
 
             .nav_summary{
                 height: fit-content;
@@ -80,6 +80,7 @@
             color: #818181;
             padding: 8px 8px 8px 32px;
             transition: 0.2s;
+            text-align: left;
 
             &:hover {
                 color: var(--color-link-hover);

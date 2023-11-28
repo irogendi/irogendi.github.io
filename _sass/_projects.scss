@@ -9,8 +9,6 @@
         text-align: right;
         margin-right: 5%;
         padding-top: 5%;
-
-
         h1, h2, h3, h4, h5, h6 { 
             color: var(--color-text-alt);
         }  
@@ -24,19 +22,10 @@
         }
     }
     .project-mini-breadcrumb {
-        text-align: right;
-        top: 0;
-        right: 0;
-        margin-right: 5%;
         margin-top: 0.5%;
         transition: 0.2s;
-        height: fit-content;
-        width: fit-content;
-        padding: 8px;
-        position: absolute;
         a {
             text-decoration: none;
-            transition: 0.2s;
             padding-bottom: 8px;
             h4 {
             color: var(--color-text-alt);

@@ -18,6 +18,8 @@
         .landing-madeby {
             color: var(--color-link);
             text-align: center;
+            font-size: 10px;
+            margin-bottom: 50px;
         }
         .landing-aboutme {
             color: var(--color-link);
@@ -436,13 +438,4 @@
     }
 }
 
-
-.fade-in {
-
-    animation: fadeIn 1.5s;
-    -webkit-animation: fadeIn 1.5s;
-    -moz-animation: fadeIn 1.5s;
-    -o-animation: fadeIn 1.5s;
-    -ms-animation: fadeIn 1.5s;
-  }
 

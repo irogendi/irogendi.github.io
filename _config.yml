@@ -39,6 +39,8 @@ thumbsurl: "/assets/thumbs/certificates/"
 
 projimagesurl: "/assets/img/projects/"
 
+max_blog: 5
+
 cert_preview:
   - title: one
     file:  1.jpeg
