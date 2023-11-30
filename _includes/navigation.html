@@ -2,20 +2,26 @@
 
 <div class="nav-wrapper">
     <div id="home_link" class="nav">
-        <a href="/" >
-            <h1> {{ site.title }}</h1>
-        </a>
-        <p class="nav_madeby">
-           {{ site.description }}
-        </p>
+        <h1>
+            <a href="/" >
+                {{ site.title }}
+            </a>
+        </h1>
     </div>
     <div class="nav">
-        <p class="nav_summary">
-           {{ site.user_description }}
-        </p>
-
+        <div class="nav_madeby">
+            <h6 class="nav">
+                {{ site.description }}
+            </h6>
+        </div>
     </div>
-
+    <div class="nav">
+        <div class="nav_summary">
+            <p >
+                {{ site.user_description }}
+            </p>
+        </div>
+    </div>
     {% for item in site.navigation %}
     <div class="nav">
         <a href="{{ item.url }}" {% if page.url contains item.url %} class="nav-current" {% endif %}>

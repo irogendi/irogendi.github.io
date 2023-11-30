@@ -27,20 +27,26 @@
 
 <div class="nav-wrapper">
     <div id="home_link" class="nav">
-        <a href="/" >
-            <h1> iro</h1>
-        </a>
-        <p class="nav_madeby">
-           made by nori
-        </p>
+        <h1>
+            <a href="/" >
+                iro
+            </a>
+        </h1>
     </div>
     <div class="nav">
-        <p class="nav_summary">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida, purus pharetra congue eleifend, nisl leo faucibus turpis, vel hendrerit sapien metus at nisi. Mauris tellus dui, rhoncus eu convallis et, dapibus eget magna. Ut viverra posuere finibus.
-        </p>
-
+        <div class="nav_madeby">
+            <h6 class="nav">
+                made by nori
+            </h6>
+        </div>
     </div>
-
+    <div class="nav">
+        <div class="nav_summary">
+            <p >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida, purus pharetra congue eleifend, nisl leo faucibus turpis, vel hendrerit sapien metus at nisi. Mauris tellus dui, rhoncus eu convallis et, dapibus eget magna. Ut viverra posuere finibus.
+            </p>
+        </div>
+    </div>
     
     <div class="nav">
         <a href="/projects"  class="nav-current" >
@@ -76,60 +82,181 @@
     <div id="bodyContent" class="content-container"> 
         <div class="main-projects-container">
   <div class="main-projects-content ">
-      <div >
-          <h3>All Projects</h3>
-          <div class ="project-gallery-wrapper fade-in">
-            
-              
-                  
-              
-                  
-              
-                  
-                  <div class="project-box">
-                    <h3><a href="/2023/11/05/proj3.html">
-                      <img src="/assets/img/projects/proj3.jpeg " alt="Proj3" class="proj" />
-                      Proj3</a></h3>
-                    <h5>05 Nov 2023</h5>
-                    <p>A banana is an edible fruit – botanically a berry – produced by several
+		<div class="project_tab">
+            <button class="project_tablinks" onclick="openProject(event, 'All')" id="defaultOpen"><h3>All</h3></button>
+            <button class="project_tablinks" onclick="openProject(event, 'Guided')"><h3>Guided</h3></button>
+            <button class="project_tablinks" onclick="openProject(event, 'Self-led')"><h3>Self-led</h3></button>
+		</div>
+      	<div >
+			<div id="All" class="project_tabcontent">
+				<div class ="main-project-gallery-wrapper fade-in">
+				
+					
+				
+					
+				
+					
+						<div class="main-project-box">
+							<h3><a href="/2023/11/05/proj3.html">
+							<img src="/assets/img/projects/proj3.jpeg " alt="Proj3" class="main-proj" />
+							Proj3</a></h3>
+							<h5>05 Nov 2023 - </h5> 
+							<p>A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</p>
+
+						</div>          
+					
+				
+					
+						<div class="main-project-box">
+							<h3><a href="/2023/11/05/proj3-copy.html">
+							<img src="/assets/img/projects/proj3.jpeg " alt="Proj3 copy" class="main-proj" />
+							Proj3 copy</a></h3>
+							<h5>05 Nov 2023 - </h5> 
+							<p>A banana is an edible fruit – botanically a berry – produced by several
 kinds of large herbaceous flowering plants in the genus Musa.</p>
 
-                  </div>          
-                  
-              
-                  
-                  <div class="project-box">
-                    <h3><a href="/2023/11/04/proj2.html">
-                      <img src="/assets/img/projects/proj2.jpeg " alt="Proj2" class="proj" />
-                      Proj2</a></h3>
-                    <h5>04 Nov 2023</h5>
-                    <p>A banana is an edible fruit – botanically a berry – produced by several
+						</div>          
+					
+				
+					
+						<div class="main-project-box">
+							<h3><a href="/2023/11/04/proj2.html">
+							<img src="/assets/img/projects/proj2.jpeg " alt="Proj2" class="main-proj" />
+							Proj2</a></h3>
+							<h5>04 Nov 2023 - self-led</h5> 
+							<p>A banana is an edible fruit – botanically a berry – produced by several
 kinds of large herbaceous flowering plants in the genus Musa.</p>
 
-                  </div>          
-                  
-              
-                  
-                  <div class="project-box">
-                    <h3><a href="/2023/11/03/proj1.html">
-                      <img src="/assets/img/projects/proj1.jpeg " alt="Proj1" class="proj" />
-                      Proj1</a></h3>
-                    <h5>03 Nov 2023</h5>
-                    <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
+						</div>          
+					
+				
+					
+						<div class="main-project-box">
+							<h3><a href="/2023/11/04/proj2-copy.html">
+							<img src="/assets/img/projects/proj2.jpeg " alt="Proj2 copy" class="main-proj" />
+							Proj2 copy</a></h3>
+							<h5>04 Nov 2023 - self-led</h5> 
+							<p>A banana is an edible fruit – botanically a berry – produced by several
+kinds of large herbaceous flowering plants in the genus Musa.</p>
+
+						</div>          
+					
+				
+					
+						<div class="main-project-box">
+							<h3><a href="/2023/11/03/proj1.html">
+							<img src="/assets/img/projects/proj1.jpeg " alt="Proj1" class="main-proj" />
+							Proj1</a></h3>
+							<h5>03 Nov 2023 - guided</h5> 
+							<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
 edible berry of several species of woody vines in the genus Actinidia.</p>
 
-                  </div>          
-                  
-              
-                  
-              
-                  
-              
-          </div>
-      </div>
-  </div>    
-</div>
+						</div>          
+					
+				
+					
+						<div class="main-project-box">
+							<h3><a href="/2023/11/03/proj1-copy.html">
+							<img src="/assets/img/projects/proj1.jpeg " alt="Proj1 copy" class="main-proj" />
+							Proj1 copy</a></h3>
+							<h5>03 Nov 2023 - guided</h5> 
+							<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
+edible berry of several species of woody vines in the genus Actinidia.</p>
 
+						</div>          
+					
+				
+					
+				
+					
+				
+				</div>
+			</div>	
+			<div id="Guided" class="project_tabcontent">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							<h3><a href="/2023/11/03/proj1.html">Proj1</a></h3>
+								<h5>03 Nov 2023</h5>
+							<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
+edible berry of several species of woody vines in the genus Actinidia.</p>
+
+						</li>
+						
+					
+						
+						<li>
+							<h3><a href="/2023/11/03/proj1-copy.html">Proj1 copy</a></h3>
+								<h5>03 Nov 2023</h5>
+							<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
+edible berry of several species of woody vines in the genus Actinidia.</p>
+
+						</li>
+						
+					
+						
+					
+						
+					
+				</ul>
+			</div>
+			<div id="Self-led" class="project_tabcontent">
+				<ul>
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<li>
+							<h3><a href="/2023/11/04/proj2.html">Proj2</a></h3>
+								<h5>04 Nov 2023</h5>
+							<p>A banana is an edible fruit – botanically a berry – produced by several
+kinds of large herbaceous flowering plants in the genus Musa.</p>
+
+						</li>
+					
+				
+					
+						<li>
+							<h3><a href="/2023/11/04/proj2-copy.html">Proj2 copy</a></h3>
+								<h5>04 Nov 2023</h5>
+							<p>A banana is an edible fruit – botanically a berry – produced by several
+kinds of large herbaceous flowering plants in the genus Musa.</p>
+
+						</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				</ul>
+			</div>  
+		</div>
+	</div>    
+</div>
     </div>
     
     <div>
@@ -138,7 +265,6 @@ edible berry of several species of woody vines in the genus Actinidia.</p>
 </div>
 
         <script src="/assets/js/scripts.js" type="text/javascript" charset="utf-8"></script>
-        <script src="/assets/js/particles.js" type="text/javascript" charset="utf-8"></script>
         <script src="/assets/js/lightbox.js" type="text/javascript" charset="utf-8"></script>
         <script src="/assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     </body>

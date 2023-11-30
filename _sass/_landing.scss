@@ -130,7 +130,6 @@
         .projects-header {
             align-self: center;
             margin-top: 15%;
-            width: auto;
             height: auto;
             color: var(--color-link);
             
@@ -138,7 +137,7 @@
         .projects-content {
             display: grid;
             width: 100%;
-            height: 100%;
+            height: 80%;
             overflow-y: hidden;
             overflow-x: hidden;
             color: var(--color-link);
@@ -251,9 +250,9 @@
             align-self: center;
             text-align: center;
             flex-direction: column;
-            width: 70%;
-            height: 100%;
-            overflow-y: auto;
+            width: 95%;
+            height: 75%;
+            overflow-y: hidden;
 
             ul {
                 align-self: center;
@@ -379,7 +378,7 @@
         .certificates-content {
             display: grid;
             width: 100%;
-            height: 100%;
+            height: 80%;
             overflow-y: hidden;
             overflow-x: hidden;
             color: var(--color-link);

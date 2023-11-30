@@ -42,26 +42,26 @@ projimagesurl: "/assets/img/projects/"
 max_blog: 5
 
 cert_preview:
-  - title: one
-    file:  1.jpeg
-  - title: two
-    file:  2.jpeg
-  - title: three
-    file:  3.jpeg
+  - title: CompTIA Security+
+    file:  security.png
+  - title: Google Cyber Security Certificate
+    file:  gcsc.png
+  - title: CompTIA Network+
+    file:  network.png
 
-certifications:
-  - title: one
-    file:  1.jpeg
-  - title: two
-    file:  2.jpeg
-  - title: three
-    file:  3.jpeg
-  - title: four
-    file:  4.jpeg
-  - title: five
-    file:  5.jpeg
-  - title: six
-    file:  6.jpeg
+cert_full:
+  - title: CompTIA Security+
+    file:  security.png
+  - title: Google Cyber Security Certificate
+    file:  gcsc.png
+  - title: CompTIA Network+
+    file:  network.png
+  - title: CompTIA A+
+    file:  a.png
+  - title: CompTIA IT Operations Specialist
+    file:  cios.png
+  - title: CompTIA Secure Infrastructure Specialist
+    file:  csis.png
 
 feature_projects:
   - title: Proj1

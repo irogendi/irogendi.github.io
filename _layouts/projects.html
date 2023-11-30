@@ -3,22 +3,53 @@ layout: details
 ---
 <div class="main-projects-container">
   <div class="main-projects-content ">
-      <div >
-          <h3>All Projects</h3>
-          <div class ="project-gallery-wrapper fade-in">
-            {% assign projects = site.feature_projects%}
-              {% for post in site.posts %}
-                  {% if post.type == 'projects' %}
-                  <div class="project-box">
-                    <h3><a href="{{ post.url }}">
-                      <img src="{{ site.projimagesurl }}{{ post.image }} " alt="{{ post.title }}" class="proj" />
-                      {{ post.title }}</a></h3>
-                    <h5>{{ post.date | date_to_string }}</h5>
-                    {{ post.excerpt }}
-                  </div>          
-                  {% endif %}
-              {% endfor %}
-          </div>
-      </div>
-  </div>    
+		<div class="project_tab">
+            <button class="project_tablinks" onclick="openProject(event, 'All')" id="defaultOpen"><h3>All</h3></button>
+            <button class="project_tablinks" onclick="openProject(event, 'Guided')"><h3>Guided</h3></button>
+            <button class="project_tablinks" onclick="openProject(event, 'Self-led')"><h3>Self-led</h3></button>
+		</div>
+      	<div >
+			<div id="All" class="project_tabcontent">
+				<div class ="main-project-gallery-wrapper fade-in">
+				{% for post in site.posts %}
+					{% if post.type == "project" %}
+						<div class="main-project-box">
+							<h3><a href="{{ post.url }}">
+							<img src="{{ site.projimagesurl }}{{ post.image }} " alt="{{ post.title }}" class="main-proj" />
+							{{ post.title }}</a></h3>
+							<h5>{{ post.date | date_to_string }} - {{ post.project_type }}</h5> 
+							{{ post.excerpt }}
+						</div>          
+					{% endif %}
+				{% endfor %}
+				</div>
+			</div>	
+			<div id="Guided" class="project_tabcontent">
+				<ul>
+					{% for post in site.posts %}
+						{% if post.project_type == "guided" %}
+						<li>
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+								<h5>{{ post.date | date_to_string }}</h5>
+							{{ post.excerpt }}
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<div id="Self-led" class="project_tabcontent">
+				<ul>
+				{% for post in site.posts %}
+					{% if post.project_type == "self-led" %}
+						<li>
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+								<h5>{{ post.date | date_to_string }}</h5>
+							{{ post.excerpt }}
+						</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</div>  
+		</div>
+	</div>    
 </div>

@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     transition: all 0.3s ease-in-out;
     overflow-y: auto;
+    overflow-x: hidden;
     
     .image-box {
         flex-basis: 20%;
@@ -21,6 +22,7 @@
             p {
                 text-align: center;
                 text-decoration: none;
+                
             }
         }
         &:focus,
@@ -49,9 +51,10 @@
     width: 100%;
     display: grid;
     margin: 20px 0px;
-    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    height: fit-content;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     transition: all 0.3s ease-in-out;
-    overflow-y: auto;
+    // overflow: hidden;
     
     .big-image-box {
         flex-basis: 20%;
@@ -60,7 +63,6 @@
         padding: 0 10px;
         margin: 5px;
         transition: all 0.3s ease-in-out;
-    
         filter: grayscale(100%);
     
         a {
@@ -101,6 +103,7 @@
     padding: 4px;
     transition: all 0.3s ease-in-out;
     overflow-y: auto;
+    overflow-x: hidden;
     
     .project-box {
         flex-basis: 25%;
@@ -130,10 +133,58 @@
 
             }
         }
-            
         .proj {
             width: 100%;
             height: 200px;
+            object-fit: cover;
+            transform: scale(1);
+        }
+    }
+}
+
+.main-project-gallery-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
+    
+    
+    .main-project-box {
+        // flex-basis: 80%;
+        flex: 20%;
+        width: 100%;
+        height: fit-content;
+        // padding: 0 10px;
+        margin: 20px 50px;
+        transition: all 0.3s ease-in-out;
+        filter: grayscale(100%);
+    
+        a {
+            text-decoration: none; 
+            color: var(--color-link);
+            p {
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+        &:focus,
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.03);
+            transition: all 0.3s ease-in-out;
+            a{
+                color: var(--color-link-hover);
+
+            }
+        }
+            
+        .main-proj {
+            width: 100%;
+            height: 300px;
             object-fit: cover;
             transform: scale(1);
         }

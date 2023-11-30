@@ -14,10 +14,11 @@
 .main-certificates-content {
     background: var(--color-sidebar-background);
     width: auto;
-    height: 630px;
+    height: fit-content;
     border-radius: 15px;
     // padding: 20px;
-    text-align: justify;
+    align-items: center;
+    justify-items: center;    
     transition: 0.3s;
-    overflow-y: auto;
+    // overflow-y: auto;
 }

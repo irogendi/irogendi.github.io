@@ -15,6 +15,15 @@
     }
     li {
         margin-top: 10px;
+        a {
+            text-decoration: none;
+            transition: 0.2s;
+
+            &:hover {
+                color: var(--color-link-hover);
+                transition: 0.2s;
+            }
+        }
     }
     .main-blog-content {
     margin-bottom: 20px;
@@ -26,7 +35,6 @@
 
         .tab {
             overflow: hidden;
-            border: 1px solid var(--color-background);
             background-color: var(--color-tabs-background);
             border-radius: 3px;
             button {
