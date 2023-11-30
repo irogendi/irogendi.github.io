@@ -1,0 +1,26 @@
+.fof-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--violet-2);
+    height: 100%;
+
+    .fof {
+        background: var(--color-sidebar-background);
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center; 
+        align-self: center;
+        margin-top:60%;
+        position: fixed;
+        p, h1 {
+            line-height: 30px;
+        }
+    }
+    .fof-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+}

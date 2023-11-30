@@ -1,0 +1,29 @@
+<section id="certificates-id" class="slides certificates">
+    <div class="certificates-section">
+        <div class="scroll-up">
+            <a id="certificates_caret_up" class="caret-up debug-"  href="#blog-id">{% include svg/up.svg %}</a>
+        </div>
+        <div class="certificates-header">
+            <div class="certificates-mainlink">
+                <h2>
+                    <a href="/{{ site.section_three }}">{{ site.section_three }}</a>
+                </h2>
+            </div>
+        </div>
+        <div class="certificates-content ">
+            <div class ="image-gallery-wrapper">
+                {% assign certs = site.cert_preview %}
+                {% for cert in certs %}
+                    <div class="image-box">
+                      <a href="{{ site.imagesurl }}{{ cert.file }}" class="lightbox-image">
+                        <img src="{{ site.thumbsurl }}{{ cert.file }} " alt="{{ cert.name }}" class="image" />
+                        <p>
+                          {{ cert.title }}
+                        </p>    
+                      </a>  
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

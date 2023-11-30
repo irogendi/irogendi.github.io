@@ -1,0 +1,191 @@
+.image-gallery-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    .image-box {
+        flex-basis: 20%;
+        width: 85%;
+        height: 250px;
+        padding: 10px 10px 0 10px;
+        margin: 5px;
+        transition: all 0.3s ease-in-out;
+    
+        filter: grayscale(100%);
+    
+        a {
+            text-decoration: none; 
+            color: var(--color-link);
+            p {
+                text-align: center;
+                text-decoration: none;
+                
+            }
+        }
+        &:focus,
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            a, p{
+                color: var(--color-link-hover);
+
+            }
+
+        }
+        .image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transform: scale(1);
+        }
+    } 
+    
+
+}
+
+.big-image-gallery-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    overflow-x: hidden;
+    
+    .big-image-box {
+        flex: 25%;
+        width: 100%;
+        height: fit-content;
+        margin: 20px 55px;
+        transition: all 0.3s ease-in-out;
+        filter: grayscale(100%);
+    
+        a {
+            text-decoration: none; 
+            color: var(--color-link);
+            p {
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+        &:focus,
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.03);
+            transition: all 0.3s ease-in-out;
+            a {
+                color: var(--color-link-hover);
+
+            }
+
+        }
+        .big-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transform: scale(1);
+        }
+    } 
+    
+
+}
+
+.project-gallery-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    justify-content: center;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    .project-box {
+        flex-basis: 25%;
+        width: 90%;
+        height: fit-content;
+        padding: 10px;
+        margin: 2px;
+        transition: all 0.3s ease-in-out;
+    
+        filter: grayscale(100%);
+    
+        a {
+            text-decoration: none; 
+            color: var(--color-link);
+            p {
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+        &:focus,
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            a {
+                color: var(--color-link-hover);
+
+            }
+        }
+        .proj {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transform: scale(1);
+        }
+    }
+}
+
+.main-project-gallery-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
+    
+    
+    .main-project-box {
+        flex: 20%;
+        width: 100%;
+        height: fit-content;
+        margin: 20px 50px;
+        transition: all 0.3s ease-in-out;
+        filter: grayscale(100%);
+    
+        a {
+            text-decoration: none; 
+            color: var(--color-link);
+            p {
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+        &:focus,
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.03);
+            transition: all 0.3s ease-in-out;
+            a{
+                color: var(--color-link-hover);
+
+            }
+        }
+            
+        .main-proj {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transform: scale(1);
+        }
+    }
+}

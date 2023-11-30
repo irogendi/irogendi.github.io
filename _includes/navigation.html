@@ -1,0 +1,35 @@
+<button href="javascript:void(0)" id="cbtn" class="closebtn" onclick="closeNav()" >&lt;</button>
+
+<div class="nav-wrapper">
+    <div id="home_link" class="nav">
+        <h1>
+            <a href="/" >
+                {{ site.title }}
+            </a>
+        </h1>
+    </div>
+    <div class="nav">
+        <div class="nav_madeby">
+            <h6 class="nav">
+                {{ site.description }}
+            </h6>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_summary">
+            <p >
+                {{ site.user_description }}
+            </p>
+        </div>
+    </div>
+    {% for item in site.navigation %}
+    <div class="nav">
+        <a href="{{ item.url }}" {% if page.url contains item.url %} class="nav-current" {% endif %}>
+            {{ item.title }}
+        </a>
+    </div>
+    {% endfor %}
+    
+</div>
+
+

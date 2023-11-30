@@ -1,0 +1,20 @@
+---
+layout: details
+---
+<div class="main-certificates-container">
+    <div class="main-certificates-content">
+        <div class ="big-image-gallery-wrapper fade-in">
+            {% assign certifications = site.cert_full%}
+            {% for cert in certifications %}
+                <div class="big-image-box">
+                  <a href="{{ site.imagesurl }}{{ cert.file }}" class="lightbox-image">
+                    <img src="{{ site.thumbsurl }}{{ cert.file }} " alt="{{ cert.name }}" class="big-image" />
+                    <p>
+                      {{ cert.title }}
+                    </p>    
+                  </a>  
+                </div>
+            {% endfor %}
+          </div>
+    </div>
+</div>
