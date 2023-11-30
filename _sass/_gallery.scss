@@ -49,19 +49,20 @@
 
 .big-image-gallery-wrapper {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 20px 0px;
     height: fit-content;
-    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     transition: all 0.3s ease-in-out;
-    // overflow: hidden;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    overflow-x: hidden;
     
     .big-image-box {
-        flex-basis: 20%;
-        width: 85%;
-        height: 250px;
-        padding: 0 10px;
-        margin: 5px;
+        flex: 25%;
+        width: 100%;
+        height: fit-content;
+        margin: 20px 55px;
         transition: all 0.3s ease-in-out;
         filter: grayscale(100%);
     
@@ -78,7 +79,7 @@
             filter: grayscale(0);
             transform: scale(1.03);
             transition: all 0.3s ease-in-out;
-            a, p{
+            a {
                 color: var(--color-link-hover);
 
             }
@@ -86,7 +87,7 @@
         }
         .big-image {
             width: 100%;
-            height: 200px;
+            height: 300px;
             object-fit: cover;
             transform: scale(1);
         }
@@ -154,11 +155,9 @@
     
     
     .main-project-box {
-        // flex-basis: 80%;
         flex: 20%;
         width: 100%;
         height: fit-content;
-        // padding: 0 10px;
         margin: 20px 50px;
         transition: all 0.3s ease-in-out;
         filter: grayscale(100%);
