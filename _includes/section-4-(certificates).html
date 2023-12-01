@@ -16,11 +16,11 @@
                 {% for cert in certs %}
                     <div class="image-box">
                       <a href="{{ site.imagesurl }}{{ cert.file }}" class="lightbox-image">
-                        <img src="{{ site.thumbsurl }}{{ cert.file }} " alt="{{ cert.name }}" class="image" />
-                        <p>
-                          {{ cert.title }}
-                        </p>    
+                        <img src="{{ site.thumbsurl }}{{ cert.file }} " alt="{{ cert.name }}" class="image" />  
                       </a>  
+                      <p>
+                        {{ cert.title }}
+                      </p>  
                     </div>
                 {% endfor %}
             </div>

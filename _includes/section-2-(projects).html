@@ -5,7 +5,7 @@
         </div>
         <div class="projects-header">
             <div class="projects-mainlink">
-                <a href="/{{ site.section_one }}"><h2>{{ site.section_one }}</h2></a>
+               <h2> <a href="/{{ site.section_one | lowercase }}">{{ site.section_one }}</a></h2>
             </div>
         </div>
         <div class="projects-content">
@@ -17,9 +17,9 @@
                       <div class="project-box">
                         <h3>
                             <a href="{{ post.url }}">
-                                <img src="{{ site.projimagesurl }}{{ feature_proj.img }} " alt="{{ feature_proj.title }}" class="proj" />
-                                {{ post.title }}
+                                <img src="{{ site.projimagesurl }}{{ feature_proj.img }} " alt="{{ feature_proj.title }}" class="proj" />                                
                             </a>
+                            {{ post.title }}
                         </h3>
                         <h5>{{ post.date | date_to_string }}</h5>
                         {{ post.excerpt }}

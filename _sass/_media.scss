@@ -1,16 +1,35 @@
 @media screen and (max-width: 800px) {
+	.scroll-up, .scroll-down {
+		display: none;
+		height: 0;
+	}
+
 	.project-gallery-wrapper {
 		flex-direction: column;
-		transform: scale(0.7);
 		p {
 			display: none;
+		}
+		.project-box{
+			.proj {
+				height: 100px;
+			}
 		}
 	}
 	.image-gallery-wrapper {
 		flex-direction: column;
-		transform: scale(0.7);
-
+		.image-box {
+			.image {
+				height: 100px;
+			}
+		}
 	}
+	.blog-content {
+		margin-top: 10%;
+	}
+	::-webkit-scrollbar {
+		width: 2px;
+	}
+	
 }
 @media screen and (max-width: 1000px) {
 
@@ -25,11 +44,6 @@
 			flex-direction: row;
 			position: relative;
 
-			// a {
-			// 	float: left;
-			// 	padding: 0;
-			// 	margin-left: 5%;
-			// }
 		}
 	}
 	.closebtn {
