@@ -243,12 +243,12 @@
             align-self: center;
             text-align: center;
             flex-direction: column;
-            // margin-top: 20%;
             width: 95%;
             height: 75%;
             overflow-y: hidden;
 
             ul {
+                margin-top: 0;
                 height: 100%;
                 display: flex;
                 align-self: center;
@@ -257,7 +257,7 @@
                 align-content: center;
                 list-style-type: none;
                 color: var(--color-link);
-                margin-top: 5%;
+                margin-top: 3%;
                 li {
                     padding: 10px;
                 }
