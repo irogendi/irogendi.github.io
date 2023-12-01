@@ -1,12 +1,14 @@
 @media screen and (max-width: 800px) {
 	.project-gallery-wrapper {
 		flex-direction: column;
+		transform: scale(0.7);
 		p {
 			display: none;
 		}
 	}
 	.image-gallery-wrapper {
 		flex-direction: column;
+		transform: scale(0.7);
 
 	}
 }
