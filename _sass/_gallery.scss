@@ -1,21 +1,18 @@
 .image-gallery-wrapper {
     width: 100%;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     transition: all 0.3s ease-in-out;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     
     .image-box {
-        flex-basis: 20%;
         width: 85%;
         height: 250px;
         padding: 10px 10px 0 10px;
         margin: 5px;
         transition: all 0.3s ease-in-out;
-    
         filter: grayscale(100%);
-    
+        align-self: center;
         a {
             text-decoration: none; 
             color: var(--color-link);
@@ -98,18 +95,14 @@
 
 .project-gallery-wrapper {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-    justify-content: center;
-    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
     transition: all 0.3s ease-in-out;
-    overflow-y: auto;
-    overflow-x: hidden;
-    
+    overflow: hidden;
+
     .project-box {
-        flex-basis: 25%;
         width: 90%;
-        height: fit-content;
         padding: 10px;
         margin: 2px;
         transition: all 0.3s ease-in-out;
