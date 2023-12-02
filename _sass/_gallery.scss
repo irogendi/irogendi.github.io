@@ -144,7 +144,6 @@
 
 .main-project-gallery-wrapper {
     width: 100%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px 0px;
@@ -154,10 +153,9 @@
     
     
     .main-project-box {
-        flex: 20%;
+        flex: 25%;
         width: 100%;
         height: fit-content;
-        margin: 20px 50px;
         transition: all 0.3s ease-in-out;
         filter: grayscale(100%);
     
