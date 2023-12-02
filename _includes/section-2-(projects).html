@@ -1,0 +1,36 @@
+<section id="projects-id" class="slides projects">
+    <div class="projects-section">
+        <div class="scroll-up">
+            <a id="projects_caret_up" class="caret-up"  href="#landing-id">{% include svg/up.svg %}</a>
+        </div>
+        <div class="projects-header">
+            <div class="projects-mainlink">
+               <h2> <a href="/{{ site.section_one | downcase }}">{{ site.section_one }}</a></h2>
+            </div>
+        </div>
+        <div class="projects-content">
+            <div class ="project-gallery-wrapper">
+                {% assign projects = site.feature_projects%}
+                {% for feature_proj in projects %}
+                  {% for post in site.posts %}
+                      {% if post.title == feature_proj.title %}
+                      <div class="project-box">
+                        <h3>
+                            <a href="{{ post.url }}">
+                                <img src="{{ site.projimagesurl }}{{ feature_proj.img }} " alt="{{ feature_proj.title }}" class="proj" />                                
+                            </a>
+                            {{ post.title }}
+                        </h3>
+                        <h5>{{ post.date | date_to_string }}</h5>
+                        {{ post.excerpt }}
+                      </div>          
+                      {% endif %}
+                  {% endfor %}
+                {% endfor %}
+            </div>  
+        </div>
+        <div class="scroll-down">
+            <a id="projects_caret_down" class="caret-down" href="#blog-id">{% include svg/down.svg %}</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,66 @@
+# Site Settings
+title: iro
+description: made by nori
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: https://ianogendi.com
+
+# User Settings
+user_name: Ian R. Ogendi
+user_description: I'm learning to build and secure stuff in the cloud. Check out what I'm working on!
+my_title: Engineer
+
+# Social Media
+
+social:
+  github: irogendi
+  # instagram: username
+  linkedin: ian-r-ogendi
+  # twitter: username
+
+navigation:
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Certificates
+    url: /certificates
+
+section_one: Projects
+section_two: Blog
+section_three: Certificates
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+imagesurl: "/assets/img/certificates/"
+thumbsurl: "/assets/thumbs/certificates/"
+
+projimagesurl: "/assets/img/projects/"
+
+cert_preview:
+  - title: CompTIA Security+
+    file:  security.png
+  - title: Google Cyber Security Certificate
+    file:  gcsc.png
+  - title: CompTIA Network+
+    file:  network.png
+
+cert_full:
+  - title: CompTIA Security+
+    file:  security.png
+  - title: Google Cyber Security Certificate
+    file:  gcsc.png
+  - title: CompTIA Network+
+    file:  network.png
+  - title: CompTIA A+
+    file:  a.png
+  - title: CompTIA IT Operations Specialist
+    file:  cios.png
+  - title: CompTIA Secure Infrastructure Specialist
+    file:  csis.png
+
+feature_projects:
+  - title: Projects coming up soon!
+    img: coming-up-soon.png

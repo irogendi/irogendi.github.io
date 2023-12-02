@@ -1,0 +1,46 @@
+---
+layout: details
+---
+<div class="main-blog-container">
+  <div class="main-blog-content">
+
+    <div class="tab">
+      <button class="tablinks" onclick="openBlog(event, 'All Posts')"><h3>All Posts</h3></button>
+      <button class="tablinks" onclick="openBlog(event, 'Blog')"id="defaultOpen"><h3>Blog</h3></button>
+    </div>
+
+    <div id="All Posts" class="tabcontent">
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          {% if post.type == "blog" %}
+            <h5>{{ post.date | date_to_string }} - <a href="/{{ post.type }}">{{ post.type }}</a></h5>
+            {{ post.excerpt }}
+          {% endif %}
+          {% if post.type == "project" %}
+          <h5>{{ post.date | date_to_string }} - <a href="/{{ post.type }}s">{{ post.type }}</a></h5>
+          {{ post.excerpt }}
+        {% endif %}
+          </li>
+        {% endfor %}
+    </ul>
+    </div>
+    
+    <div id="Blog" class="tabcontent">
+      <ul>
+        {% for post in site.posts %}
+          {% if post.type == "blog" %}
+            <li>
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <h5>{{ post.date | date_to_string }} - <a href="/{{ post.type }}">{{ post.type }}</a></h5>
+              {{ post.excerpt }}
+            </li>
+          {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    
+    
+  </div>  
+</div>
