@@ -6,7 +6,7 @@ url: https://ianogendi.com
 
 # User Settings
 user_name: Ian R. Ogendi
-user_description: I build and secure stuff in the cloud. Check them out!
+user_description: I'm learning to build and secure stuff in the cloud. Check out what I'm working on!
 my_title: Engineer
 
 # Social Media
@@ -39,8 +39,6 @@ thumbsurl: "/assets/thumbs/certificates/"
 
 projimagesurl: "/assets/img/projects/"
 
-max_blog: 5
-
 cert_preview:
   - title: CompTIA Security+
     file:  security.png
@@ -64,9 +62,5 @@ cert_full:
     file:  csis.png
 
 feature_projects:
-  - title: Proj1
-    img: proj1.jpeg
-  - title: Proj2
-    img: proj2.jpeg
-  - title: Proj3
-    img: proj3.jpeg
+  - title: Projects coming up soon!
+    img: coming-up-soon.png
