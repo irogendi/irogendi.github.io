@@ -14,8 +14,14 @@ layout: details
         {% for post in site.posts %}
           <li>
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          {% if post.type == "blog" %}
             <h5>{{ post.date | date_to_string }} - <a href="/{{ post.type }}">{{ post.type }}</a></h5>
             {{ post.excerpt }}
+          {% endif %}
+          {% if post.type == "project" %}
+          <h5>{{ post.date | date_to_string }} - <a href="/{{ post.type }}s">{{ post.type }}</a></h5>
+          {{ post.excerpt }}
+        {% endif %}
           </li>
         {% endfor %}
     </ul>

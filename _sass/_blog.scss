@@ -6,9 +6,7 @@
     background: var(--black);
     color: var(--color-text-alt);
     transition: 0.5s;
-    p, h1, h2, h3 {
-        line-height: 30px;
-    }
+
     ul {
         list-style-type: none;
         margin: 20px;
@@ -22,6 +20,14 @@
             &:hover {
                 color: var(--color-link-hover);
                 transition: 0.2s;
+            }
+        }
+        h5 {
+            color: var(--color-post-dates);
+            border-bottom: 2px solid;
+            border-color: var(--color-tabs-background);
+            a {
+                color: var(--color-post-dates);
             }
         }
     }
@@ -58,7 +64,7 @@
                 background-color: var(--color-link-active);
             }
         }
-        
+
 
     }
             

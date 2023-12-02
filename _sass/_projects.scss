@@ -50,16 +50,22 @@
     background: var(--black);
     color: var(--color-text-alt);
     transition: 0.5s;
-    p, h1, h2, h3 {
-        line-height: 30px;
-    }
     ul {
         list-style-type: none;
         margin: 20px;
     }
     li {
         margin-top: 10px;
+        a{
+            text-decoration: none;
+        }
+        h5 {
+            color: var(--color-post-dates);
+            border-bottom: 2px solid;
+            border-color: var(--color-tabs-background);
+        }
     }
+
     .main-projects-content {
         margin-bottom: 30px;
         background: var(--color-sidebar-background);

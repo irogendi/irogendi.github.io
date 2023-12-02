@@ -35,8 +35,16 @@
 	.image-gallery-wrapper {
 		flex-direction: column;
 		.image-box {
-			margin: 20px 0px;
 			.image {
+				height: 100px;
+			}
+		}
+	}
+	.big-image-gallery-wrapper {
+		flex-direction: column;
+		.big-image-box {
+			margin: 20px 0px;
+			.big-image {
 				height: 100px;
 			}
 		}
