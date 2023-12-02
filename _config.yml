@@ -62,5 +62,8 @@ cert_full:
     file:  csis.png
 
 feature_projects:
-  - title: Projects coming up soon!
-    img: coming-up-soon.png
+  - title: Projects coming soon!
+    img: coming-soon.png
+
+
+exclude: [/post templates/]

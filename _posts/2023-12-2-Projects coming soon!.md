@@ -2,7 +2,7 @@
 layout: project-post
 type: project
 project_type: update
-image: coming-up-soon.png
+image: coming-soon.png
 ---
 
 Hmm... So it's pretty empty here right now, eh?
