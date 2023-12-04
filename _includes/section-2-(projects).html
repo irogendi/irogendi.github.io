@@ -18,8 +18,8 @@
                         <h3>
                             <a href="{{ post.url }}">
                                 <img src="{{ site.projimagesurl }}{{ feature_proj.img }} " alt="{{ feature_proj.title }}" class="proj" />                                
+                                {{ post.title }}
                             </a>
-                            {{ post.title }}
                         </h3>
                         <h5>{{ post.date | date_to_string }}</h5>
                         {{ post.excerpt }}

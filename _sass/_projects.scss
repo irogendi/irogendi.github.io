@@ -8,7 +8,6 @@
     .project-page-header {
         text-align: right;
         margin-right: 5%;
-        padding-top: 5%;
         h1, h2, h3, h4, h5, h6 { 
             color: var(--color-text-alt);
         }  
@@ -50,6 +49,9 @@
     background: var(--black);
     color: var(--color-text-alt);
     transition: 0.5s;
+    p, h1, h2, h3 {
+        line-height: 30px;
+    }
     ul {
         list-style-type: none;
         margin: 20px;
