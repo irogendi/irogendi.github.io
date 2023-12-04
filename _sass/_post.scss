@@ -35,16 +35,13 @@
     transition: 0.2s;
     a {
         text-decoration: none;
+        color: var(--color-text);
+        transition: 0.2s;
         padding-bottom: 8px;
-        h4 {
-        color: var(--color-text-alt);
-            &:hover {
-                color: var(--color-link-hover);
-                font-size: 120%;
-                transition: 0.2s;
-            }
+        &:hover {
+            color: var(--color-link-hover);
+            transition: 0.2s;
         }
-
     }
 }
 
