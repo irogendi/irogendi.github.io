@@ -1,7 +1,7 @@
-<section id="projects-id" class="slides projects">
+<section id="projects" class="slides projects">
     <div class="projects-section">
         <div class="scroll-up">
-            <a id="projects_caret_up" class="caret-up"  href="#landing-id">{% include svg/up.svg %}</a>
+            <a id="projects_caret_up" class="caret-up"  href="#landing">{% include svg/up.svg %}</a>
         </div>
         <div class="projects-header">
             <div class="projects-mainlink">
@@ -29,8 +29,13 @@
                 {% endfor %}
             </div>  
         </div>
+
+        <div class="projects-mainlink">
+            <a href="/{{ site.section_one | downcase }}">see all</a>
+        </div>
+
         <div class="scroll-down">
-            <a id="projects_caret_down" class="caret-down" href="#blog-id">{% include svg/down.svg %}</a>
+            <a id="projects_caret_down" class="caret-down" href="#blog">{% include svg/down.svg %}</a>
         </div>
     </div>
 </section>

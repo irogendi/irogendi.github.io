@@ -1,7 +1,7 @@
-<section id="blog-id" class="slides blog">
+<section id="blog" class="slides blog">
     <div class="blog-section ">
         <div class="scroll-up">
-            <a id="blog_caret_up" class="caret-up"  href="#projects-id">{% include svg/up.svg %}</a>
+            <a id="blog_caret_up" class="caret-up"  href="#projects">{% include svg/up.svg %}</a>
         </div>
         <div class="blog-header">
             <div class="blog-mainlink">
@@ -17,14 +17,16 @@
                             {{ post.title | upcase }}
                         </a>
                         <h6>{{ post.date | date_to_string }} - {{ post.type }}</h6>
-                        <p>{{ post.excerpt }}</p>
+                        <p>{{ post.description }}</p>
                     </li>
                 {% endfor %}
             </ul>
         </div>
-  
+        <div class="blog-mainlink">
+            <a href="/{{ site.section_two | downcase }}">see all</a>
+        </div> 
         <div class="scroll-down">
-            <a id="blog_caret_down" class="caret-down" href="#certificates-id">{% include svg/down.svg %}</a>
+            <a id="blog_caret_down" class="caret-down" href="#certificates">{% include svg/down.svg %}</a>
         </div>
         
     </div>

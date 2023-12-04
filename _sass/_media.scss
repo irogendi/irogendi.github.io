@@ -13,6 +13,17 @@
 
 		}
 	}
+	.project-gallery-wrapper {
+	    display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.project-box{
+			padding-bottom: 20px;
+			.proj {
+				height: 300px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -23,10 +34,12 @@
 
 	.project-gallery-wrapper {
 		flex-direction: column;
+		
 		p {
 			display: none;
 		}
 		.project-box{
+			margin-bottom: 30px;
 			.proj {
 				height: 100px;
 			}

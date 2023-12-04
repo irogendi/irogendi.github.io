@@ -3,6 +3,7 @@ layout: project-post
 type: project
 project_type: update
 image: coming-soon.png
+description: Hmm... So it's pretty empty here right now, eh?
 ---
 
 Hmm... So it's pretty empty here right now, eh?

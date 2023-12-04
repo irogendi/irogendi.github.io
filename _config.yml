@@ -65,5 +65,4 @@ feature_projects:
   - title: Projects coming soon!
     img: coming-soon.png
 
-
 exclude: [/post templates/]

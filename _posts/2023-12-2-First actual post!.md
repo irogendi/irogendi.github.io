@@ -1,6 +1,7 @@
 ---
 layout: post
 type: blog
+description: Well hello there! 
 ---
 
 Well hello there! 

@@ -1,33 +1,35 @@
-<section id="landing-id" class="slides landing fade-in">
+<section id="landing" class="slides landing fade-in">
     <div class="landing-section">
-        <div class="landing-title">
-            <h1>{{ site.user_name }}</h1>
-        </div>
-        <div class="landing-madeby">
-            <p>
-                {{ site.description }}
-            </p>
-        </div>
-        <div class="landing-aboutme">
-            <p>
-                {{ site.user_description }}
-            </p>
-        </div>
-        <div class="landing-socials"> 
-            <a class="icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">{% include svg/linkedin.svg %}</a>
-            <a class="icon" href="https://github.com/{{ site.social.github }}">{% include svg/github.svg %}</a>
-        </div>
-        <div class="landing-links">
-            {% for item in site.navigation %}
-            <div class="landing-link-item">
-                <a href="{{ item.url }}" >
-                    {{ item.title }}
-                </a>
+        <div class="landing-content">
+            <div class="landing-title">
+                <h1>{{ site.user_name }}</h1>
             </div>
-            {% endfor %}
+            <div class="landing-madeby">
+                <p>
+                    {{ site.description }}
+                </p>
+            </div>
+            <div class="landing-aboutme">
+                <p>
+                    {{ site.user_description }}
+                </p>
+            </div>
+            <div class="landing-socials"> 
+                <a class="icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">{% include svg/linkedin.svg %}</a>
+                <a class="icon" href="https://github.com/{{ site.social.github }}">{% include svg/github.svg %}</a>
+            </div>
+            <div class="landing-links">
+                {% for item in site.navigation %}
+                <div class="landing-link-item">
+                    <a href="#{{ item.title | downcase }}" >
+                        {{ item.title }}
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
         </div>
         <div class="scroll-down">
-            <a id="landing_caret" class="caret-down" href="#projects-id">{% include svg/down.svg %}</a>
+            <a id="landing_caret" class="caret-down" href="#projects">{% include svg/down.svg %}</a>
         </div>
     </div>
 </section>
