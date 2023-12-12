@@ -48,6 +48,8 @@ cert_preview:
     file:  network.png
 
 cert_full:
+  - title: Microsoft Certified - Azure Fundamentals
+    file:  az900.png
   - title: CompTIA Security+
     file:  security.png
   - title: Google Cyber Security Certificate
@@ -60,6 +62,7 @@ cert_full:
     file:  cios.png
   - title: CompTIA Secure Infrastructure Specialist
     file:  csis.png
+
 
 feature_projects:
   - title: Projects coming soon!
